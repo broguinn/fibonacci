@@ -13,7 +13,7 @@ function fibonacciMem(index) {
   if (num === 1) {
     return cache[0];
   } else if (num === 2) {
-    return cache[1];     
+    return cache[1];
   } else if (cache[index-3] > -1) {
     var n2 = cache[index-3];
   } else {
@@ -35,7 +35,7 @@ $(function() {
     $("#result").empty().append(number);
     $("#hands").fadeIn();
     setTimeout(function() {
-      $("#masonic").fadeIn();      
+      $("#masonic").fadeIn();
     }, 800);
     setTimeout(function() {
       $("#tom").fadeIn();
